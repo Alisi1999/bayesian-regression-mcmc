@@ -221,3 +221,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated Monte Carlo output and local data
+results/
+Dataset/
+*.npy
+*.npz
+*.pkl
+*.joblib
