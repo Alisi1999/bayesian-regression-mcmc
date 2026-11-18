@@ -30,7 +30,7 @@ The original submitted report records **RMSE ≈ 0.8021** on the held-out test s
 ## Repository organization
 
 - bayes_regression/ — Data preparation, probabilistic model, MCMC sampler, diagnostics, predictive routines, plotting.
-- run_analysis.py — Full experiment from the original project (computationally demanding).
+- run_analysis.py — Refactored driver for the full study design (computationally demanding); not identical byte-for-byte to the original script.
 - quickstart.py — Small synthetic-data smoke test without external downloads.
 - requirements.txt — Required Python libraries.
 - tests/ — Lightweight tests of the core routines.
@@ -58,12 +58,15 @@ For the full original analysis:
 
 ~~~bash
 python run_analysis.py
+
+# Smaller California Housing demonstration (not suitable for convergence claims)
+python run_analysis.py --quick
 ~~~
 
-**Warning:** The full analysis runs multiple chains for 12,000 iterations, plus several additional sensitivity runs. It can be slow; it also needs internet access on the first use of the California Housing dataset. The saved original results use a time-dependent random seed in run_analysis.py.
+**Warning:** The full analysis runs multiple chains for 12,000 iterations, plus several additional sensitivity runs. It can be slow; it also needs internet access on the first use of the California Housing dataset. The original script used a time-dependent random seed; the refactored driver now accepts --seed (default 123) for more repeatable experiments.
 
 ## Contributions and attribution
 
 The **MCMC implementation and diagnostic code were developed jointly** by Seyed Ali Poorseyed and a project teammate. Seyed Ali Poorseyed independently carried out and interpreted the empirical analysis documented in his final report.
 
-This is a portfolio presentation of collaborative academic work, not a claim of sole authorship. Code changes made for repository cleanup and shorter smoke tests are distinguished from the original experiment. No open-source license has been added pending publication review.
+This is a portfolio presentation of collaborative academic work, not a claim of sole authorship. The repository source has been cleaned and partially refactored, including a short-chain autocorrelation fix. The original submission is preserved separately; full experiments and archived report numbers have not yet been reproduced with this version. Lightweight core checks passed on the original local copy, but the exact published files have not yet undergone a complete end-to-end rerun. No open-source license has been added pending publication review.
