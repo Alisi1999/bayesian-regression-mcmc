@@ -4,7 +4,7 @@ A **collaborative Master's project** completed for *On the Theory and Practice o
 
 We studied **convergence, mixing, and sampling efficiency** of a component-wise **Random-Walk Metropolis–Hastings (MH)** sampler for Bayesian linear regression on the [California Housing dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html).
 
-> **Project status:** This repository is being prepared from the original group submission. It is **private** while we review the shared code and publication permissions. Saved outcomes are historical project results; the complete experiment has not been independently rerun for this repository.
+> **Project status:** This is a public, refactored portfolio presentation of a collaborative Master's project, shared with the project teammate's permission. The results below are historical project results; the complete experiment has **not** been independently rerun using this repository.
 
 ## Research questions
 
@@ -69,4 +69,4 @@ python run_analysis.py --quick
 
 The **MCMC implementation and diagnostic code were developed jointly** by Seyed Ali Poorseyed and a project teammate. Seyed Ali Poorseyed independently carried out and interpreted the empirical analysis documented in his final report.
 
-This is a portfolio presentation of collaborative academic work, not a claim of sole authorship. The repository source has been cleaned and partially refactored, including a short-chain autocorrelation fix. The original submission is preserved separately; full experiments and archived report numbers have not yet been reproduced with this version. Lightweight core checks passed on the original local copy, but the exact published files have not yet undergone a complete end-to-end rerun. No open-source license has been added pending publication review.
+This is a portfolio presentation of collaborative academic work, not a claim of sole authorship. The repository source has been cleaned and partially refactored, including a short-chain autocorrelation fix. The original submission is preserved separately; full experiments and archived report numbers have not yet been reproduced with this version. Lightweight core checks passed on the original local copy, but the exact published files have not yet undergone a complete end-to-end rerun. No open-source license has been selected for this repository.
