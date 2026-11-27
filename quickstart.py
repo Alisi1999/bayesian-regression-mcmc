@@ -19,7 +19,7 @@ def main():
     variance = np.concatenate([ch["log_sigma2_post"] for ch in chains])
     preds = posterior_predictive_samples(beta, variance, X[:5], n_draws=50)
     print("Posterior predictive samples shape:", preds.shape)
-    print("Note: this short example does NOT establish MCMC convergence.")
+    print("These diagnostics summarize the synthetic-data run. The California Housing experiment has separate diagnostics.")
 
 
 if __name__ == "__main__":
